@@ -1,0 +1,27 @@
+increase 72 /// H
+move right
+increase 101 /// e
+move right
+increase 108 /// l
+move right
+increase 108 /// l
+move right
+increase 111 /// o
+move right
+increase 32 /// space
+move right
+increase 87 /// W
+move right
+increase 111 /// o
+move right
+increase 114 /// r
+move right
+increase 108 /// l
+move right
+increase 100 /// d
+/// print everything
+move to 0
+loop
+output
+move right
+endloop
