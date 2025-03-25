@@ -1,3 +1,5 @@
+from advanced import AdvancedToBrainFuck
+
 class BasicToBrainFuck:
     def __init__(self, input, output):
         self.input = input
@@ -47,6 +49,9 @@ class BasicToBrainFuck:
                     "output": ".", "input": ",", 
                     "loop": "[", "endloop": "]"
                 }[command])
+            else:
+                bf, pointer = AdvancedToBrainFuck.process(command, parts, pointer)
+                result.append(bf)
 
             if comment:
                 result.append("///" + "".join(comment))
